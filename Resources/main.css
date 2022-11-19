@@ -50,7 +50,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 10px 25px 0 15px;
+    margin: 10px 25px 25px 15px;
 }
 
 .logo img {
@@ -91,4 +91,61 @@ header {
     font-weight: 500;
     font-size: 18px;
     border-radius: 4px;
+}
+
+.homeContent {
+    display: flex;
+    justify-items: stretch;
+    align-items: center;
+    margin: 0 5% 100px;
+}
+
+.homeText {
+    width: 50%;
+}
+
+.homeText h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 110%;
+    letter-spacing: -0.015em;
+    color: #333333;
+}
+
+.homeText p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #333333;
+}
+
+.homePhoto {
+    width: 50%;
+    height: auto;
+}
+
+.homePhoto img {
+    width: 100%;
+}
+
+.homeBtn .start, .homeBtn .more {
+    display: inline-block;
+    margin-right: 16px;
+    width: 200px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    text-decoration: none;
+    background: #0099FF;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.homeBtn .more {
+    background: #FFFFFF;
+    color: #0099FF;
+    border-color: #0099FF;
 }
