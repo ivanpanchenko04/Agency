@@ -1,10 +1,84 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -13,7 +87,17 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 
@@ -22,17 +106,23 @@ body {
     font-family: 'Inter';
     font-style: normal;
     margin: 0;
+    overflow-x: hidden;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
     quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
@@ -131,7 +221,8 @@ header {
     width: 100%;
 }
 
-.homeBtn .start, .homeBtn .more {
+.homeBtn .start,
+.homeBtn .more {
     display: inline-block;
     margin-right: 16px;
     width: 200px;
@@ -153,15 +244,20 @@ header {
     border-color: #0099FF;
 }
 
-.services, .meetOurTeam, .FAQ {
+.services,
+.meetOurTeam,
+.FAQ {
     background: rgba(0, 153, 255, 0.04);
     padding: 120px 80px;
     text-align: center;
     color: #333333;
 }
 
-.services .servicesText h6, .aboutUs .aboutText h6,
-.meetOurTeam h6, .portfolioText h6, .FAQText h6 {
+.services .servicesText h6,
+.aboutUs .aboutText h6,
+.meetOurTeam h6,
+.portfolioText h6,
+.FAQText h6 {
     font-weight: 600;
     font-size: 20px;
     line-height: 130%;
@@ -169,14 +265,18 @@ header {
     margin-block-end: 0;
 }
 
-.services .servicesText h2, .aboutUs .aboutText h2,
-.meetOurTeam h2, .portfolioText h2, .FAQText h2 {
+.services .servicesText h2,
+.aboutUs .aboutText h2,
+.meetOurTeam h2,
+.portfolioText h2,
+.FAQText h2 {
     font-weight: 700;
     font-size: 48px;
     line-height: 138%;
 }
 
-.services .servicesText p, .aboutUs .aboutText p {
+.services .servicesText p,
+.aboutUs .aboutText p {
     display: inline-block;
     width: 612px;
     font-weight: 400;
@@ -545,4 +645,79 @@ header {
     font-size: 16px;
     line-height: 150%;
     color: #494949;
+}
+
+.b-portfolio {
+    background-color: #0099FF;
+    color: #FFFFFF;
+}
+
+.b-portfolio h1,
+.b-works h6 {
+    padding-top: 120px;
+    font-weight: 700;
+}
+
+.b-portfolio p,
+.b-works p {
+    padding-bottom: 120px;
+    font-weight: 400;
+    width: 753px;
+}
+
+.b-works {
+    background: rgba(0, 153, 255, 0.04);
+}
+
+.b-works h2 {
+    font-weight: 700;
+}
+
+.b-works {
+    padding-bottom: 100px;
+}
+
+.card {
+    width: 416px;
+    text-align: left;
+    position: relative;
+}
+
+.card h5 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.card p {
+    display: inline;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card a {
+    color: #333333;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 4px solid #0099FF;
+}
+
+.b-link {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+div.b-grid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: 0 auto;
+}
+
+button.b-see-portfolio {
+    margin: 25px auto 0;
+    width: 200px;
+    height: 53px;
 }
