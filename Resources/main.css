@@ -153,7 +153,7 @@ header {
     border-color: #0099FF;
 }
 
-.services, .meetOurTeam {
+.services, .meetOurTeam, .FAQ {
     background: rgba(0, 153, 255, 0.04);
     padding: 120px 80px;
     text-align: center;
@@ -161,7 +161,7 @@ header {
 }
 
 .services .servicesText h6, .aboutUs .aboutText h6,
-.meetOurTeam h6, .portfolioText h6 {
+.meetOurTeam h6, .portfolioText h6, .FAQText h6 {
     font-weight: 600;
     font-size: 20px;
     line-height: 130%;
@@ -170,7 +170,7 @@ header {
 }
 
 .services .servicesText h2, .aboutUs .aboutText h2,
-.meetOurTeam h2, .portfolioText h2 {
+.meetOurTeam h2, .portfolioText h2, .FAQText h2 {
     font-weight: 700;
     font-size: 48px;
     line-height: 138%;
@@ -409,7 +409,7 @@ header {
     margin-right: 10px;
 }
 
-.seeAll button{
+.seeAll button {
     align-items: center;
     padding: 12px 24px;
     gap: 10px;
@@ -419,4 +419,130 @@ header {
     border-radius: 4px;
     border: none;
     color: #FFFFFF;
+}
+
+.FAQ .FAQText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 112px;
+}
+
+.FAQ .FAQText h6 {
+    margin-bottom: 16px;
+}
+
+.FAQ .FItem {
+    width: 66%;
+    background: #FFFFFF;
+    box-shadow: 0 10px 20px rgba(164, 217, 253, 0.15);
+    border-radius: 4px;
+    margin: 0 auto 15px;
+    text-align: left;
+    position: relative;
+}
+
+.FAQ .FItem .FAQITitle {
+    padding: 32px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    color: #333333;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.FAQ .FItem .FAQIHeader:after {
+    content: "^";
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    font-size: 28px;
+    cursor: pointer;
+    transform-origin: center center;
+    height: 25px;
+}
+
+.FAQ .FItem .FAQIText {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 156%;
+    color: #494949;
+    padding: 0 32px 32px 32px;
+}
+
+.FAQ .FItem.closed .FAQIText {
+    display: none;
+}
+
+.FAQ .FItem.closed .FAQIHeader:after {
+    transform: rotate(180deg);
+}
+
+.testimonials {
+    margin: auto 80px auto 80px;
+}
+
+.customerText h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 138%;
+    color: #000000;
+    margin: 120px auto 24px auto;
+}
+
+.customerText p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 156%;
+    color: #494949;
+    margin-bottom: 48px;
+}
+
+.customerItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonialText {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 155%;
+    color: #494949;
+}
+
+.testimonialPerson {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.personDescription {
+    margin-left: 20px;
+}
+
+.personDescription h6 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #333333;
+}
+
+.personDescription p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #494949;
 }
