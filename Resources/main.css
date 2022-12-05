@@ -846,6 +846,16 @@ div.ns-first {
     padding-left: 96px;
 }
 
+.ns-cont-item {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.ns-cont-item p {
+    margin-left: 5px;
+}
+
 .new-start h4 {
     font-weight: 700;
     font-size: 32px;
